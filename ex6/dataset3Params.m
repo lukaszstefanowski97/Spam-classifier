@@ -30,8 +30,6 @@ sigmas = [0.01, 0.03, 0.1, 0.3, 1.0, 3.0, 10.0, 30.0];
 % Note: intmax should be so large that the first iteration becomes min.
 minError = intmax;
 
-% Nested for-loop to hit all combinations of C and sigma values.\
-% Not even going to try to vectorize...
 for i = 1:length(Cs)
 	for j = 1:length(sigmas)
 		% Calculate model/prediction/error for these C and sigma values.
